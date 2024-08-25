@@ -1,46 +1,31 @@
-# Turborepo starter
+<p align="center">
+  <a href="http://nestjs.com/" target="blank"><img src="images/nestjs.png" alt="Nest Logo" width="256" /></a>
+</p>
 
-This is an official starter Turborepo.
+<h1 align="center">⭐ Trunc.ar Shorten URL System ⭐</h1>
 
-## Using this example
+<p align="center">
+ShortenURL system using NestJS with MongoDB, tracking, and user management features.
+</p>
 
-Run the following command:
+<p align="center">
+  <a href="https://github.com/MarcosT96/trunc.ar/actions/workflows/node.yml?branch=main"><img src="https://github.com/MarcosT96/trunc.ar/actions/workflows/node.yml/badge.svg?branch=main" alt="nodejs"/></a>
+  <a href="https://nodejs.org/docs/latest-v20.x/api/index.html"><img src="https://img.shields.io/badge/node-20.x-green.svg" alt="node"/></a>
+  <a href="https://www.typescriptlang.org/"><img src="https://img.shields.io/badge/typescript-5.x-blue.svg" alt="typescript"/></a>
+  <a href="https://docs.nestjs.com/v10/"><img src="https://img.shields.io/badge/npm-10.x-red.svg" alt="npm"/></a>
+  <a href="https://fastify.dev/"><img src="https://img.shields.io/badge/Web_Framework-Fastify_⚡-black.svg" alt="fastify"/></a>
+  <a href="https://swc.rs/"><img src="https://img.shields.io/badge/Compiler-SWC_-orange.svg" alt="swc"/></a>
+  <a href="https://vitest.dev/"><img src="https://img.shields.io/badge/Test-Vitest_-yellow.svg" alt="swc"/></a>
+  <a href="https://www.docker.com/"><img src="https://img.shields.io/badge/Dockerized 🐳_-blue.svg" alt="docker"/></a>
+</p>
 
-```bash
-npx create-turbo@latest -e with-nestjs
-```
+## 👀 Motivation
 
-## What's inside?
+This ShortenURL system project using NestJS and MongoDB is driven by a desire to deepen my understanding of key web development technologies. Utilizing NestJS allows me to explore scalable design patterns, while MongoDB offers the opportunity to apply advanced concepts in data modeling and query optimization.
 
-This Turborepo includes the following packages/apps:
+Additionally, this project enables me to demonstrate my acquired knowledge in web application development. Creating a functional solution for URL shortening and management reflects my ability to tackle technical challenges and develop secure, scalable web services.
 
-### Apps and Packages
-
-    .
-    ├── apps
-    │   ├── api                       # NestJS app (https://nestjs.com).
-    │   └── web                       # Next.js app (https://nextjs.org).
-    └── packages
-        ├── @repo/api                 # Shared `NestJS` resources.
-        ├── @repo/eslint-config       # `eslint` configurations (includes `prettier`)
-        ├── @repo/jest-config         # `jest` configurations
-        ├── @repo/typescript-config   # `tsconfig.json`s used throughout the monorepo
-        └── @repo/ui                  # Shareable stub React component library.
-
-Each package and application are 100% [TypeScript](https://www.typescriptlang.org/) safe.
-
-### Utilities
-
-This `Turborepo` has some additional tools already set for you:
-
-- [TypeScript](https://www.typescriptlang.org/) for static type-safety
-- [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
-- [Jest](https://prettier.io) & [Playwright](https://playwright.dev/) for testing
-
-### Commands
-
-This `Turborepo` already configured useful commands for all your apps and packages.
+Finally, this project will serve as a tangible demonstration of my technical competence, allowing me to document the process and showcase my ability to execute complete projects, from design to implementation and testing.
 
 #### Build
 
