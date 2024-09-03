@@ -1,18 +1,18 @@
-import { defineConfig } from '@playwright/test';
+const { createProxyMiddleware } = require('http-proxy-middleware');
 
-/** @type {import('next').NextConfig} */
 module.exports = {
-  transpilePackages: ['@repo/ui'],
-};
-
-export default defineConfig({
-  plugins: [],
-  server: {
-    proxy: {
-      '/api': {
-        target: 'http://localhost:3000',
-        changeOrigin: true,
+  async rewrites() {
+    return [
+      {
+        source: '/api/:path*',
+        destination: 'https://localhost:3000/:path*', // Proxy al Backend
       },
-    },
+    ];
   },
-});
+  webpack: (config, { isServer }) => {
+    if (!isServer) {
+      config.resolve.fallback = { fs: false, module: false };
+    }
+    return config;
+  },
+};
