@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "build": "npm run build:clean && nest build --path tsconfig.prod.json",
+    "build": "npm run build:clean && nest build --path tsconfig.build.json",
     "start": "node dist/main.js",
     "dev": "nest start --watch --debug=0.0.0.0:9229 --preserveWatchOutput",
     "test": "rimraf coverage .nyc_output && concurrently 'npm:test:unit' 'npm:test:e2e' && npm run calculate-global-test-coverage",
@@ -27,7 +27,8 @@
     "bcrypt": "^5.1.1",
     "class-transformer": "^0.5.1",
     "class-validator": "^0.14.1",
-    "mongoose": "^8.5.4",
+    "fastify": "^4.28.1",
+    "mongoose": "^8.6.0",
     "reflect-metadata": "^0.2.2",
     "rxjs": "^7.8.1"
   },
